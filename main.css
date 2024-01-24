@@ -152,6 +152,15 @@ body.active {
   padding: 0rem 5rem;
   border-bottom: 0.1px solid #0073c3;
 }
+.header .logo {
+  width: 150px;
+  height: 100px;
+}
+.header .logo img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .header .container {
   display: flex;
   align-items: center;
