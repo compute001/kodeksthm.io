@@ -234,7 +234,7 @@ body.active {
   padding-top: 120px;
   padding-bottom: 14rem;
   color: #9e9fa3;
-  background-image: url("../images/hero.jpg");
+  background-image: url("hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 80% center;
