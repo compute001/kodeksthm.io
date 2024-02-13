@@ -1,7 +1,7 @@
 let light = document.querySelector('.darklight .light');
 let moon = document.querySelector('.darklight .moon');
 let header = document.querySelector('.header');
-let hero = document.querySelector('.hero');
+// let hero = document.querySelector('.hero');
 
 
 let allelem = document.querySelectorAll('.a');
