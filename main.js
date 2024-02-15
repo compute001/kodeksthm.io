@@ -1,7 +1,7 @@
 let light = document.querySelector('.darklight .light');
 let moon = document.querySelector('.darklight .moon');
 let header = document.querySelector('.header');
-// let hero = document.querySelector('.hero');
+let hero = document.querySelector('.hero');
 
 
 let allelem = document.querySelectorAll('.a');
@@ -96,3 +96,33 @@ window.addEventListener('scroll',function(){
     header.classList.remove('headactive');
   }
 })
+
+//Moveuse move
+
+$('document').ready(function(){
+  var circle = document.createElement('div');
+  
+  $(circle).css({ "background":"#e6e6e6","width":15, "height":15,"borderRadius":"50%","border":"1px solid #84b4d4"});
+  
+  console.log(circle);
+ $('.hero').mousemove(function(e){
+  $('.hero').append(circle);
+  console.clear();
+console.log(e.pageX);
+console.log(e.pageY);
+
+$(circle).offset({left:e.pageX, top:e.pageY});
+  });
+  $('.hero').mouseleave(function(e){
+    $(circle).remove();
+  });
+
+  //image animation
+
+  console.log($('.hero figure'));
+
+  $('.hero figure').addClass('active');
+  
+
+})
+ 
