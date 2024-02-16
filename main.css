@@ -143,7 +143,7 @@ body.active {
   top: 0;
   left: 0;
   width: 100%;
-  background: #333333;
+  background: #002641;
   z-index: 20;
   transition: all 0.5s ease-in-out;
 }
@@ -338,7 +338,7 @@ body.active {
 }
 
 .aboutus {
-  margin-top: 14rem;
+  margin-top: 10rem;
   color: #9e9fa3;
 }
 .aboutus .container {
@@ -349,19 +349,55 @@ body.active {
   padding-bottom: 8rem;
   border-bottom: 1px solid #4d4d4d;
 }
-.aboutus .leftsidecont p {
+.aboutus .leftsidecont figure {
+  height: 400px;
+  width: 500px;
+  background-color: #83bcc7;
+  border-radius: 50%;
+  border-top-left-radius: 7rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus .leftsidecont figure::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  width: 400px;
+  height: 250px;
+  background: #4c9cd2;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  opacity: 0.3;
+  z-index: -1;
+}
+.aboutus .leftsidecont figure img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 6rem;
+  margin-left: 8rem;
+}
+.aboutus .rightsidecont .a {
   font-size: 36px;
   color: #ffffff;
   font-weight: 600;
   line-height: 1.4;
+  margin-bottom: 1rem;
 }
 .aboutus .rightsidecont p span {
-  font-size: 20px;
-  font-weight: 500;
-  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(#0073c3, #4c9cd2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboutus .rightsidecont p {
+  font-size: 18px;
 }
 .aboutus .rightsidecont button {
-  margin-top: 1rem;
+  margin-top: 3.5rem;
 }
 .aboutus .rightsidecont a {
   color: #ffffff;
