@@ -350,34 +350,32 @@ body.active {
   border-bottom: 1px solid #4d4d4d;
 }
 .aboutus .leftsidecont figure {
-  height: 400px;
-  width: 500px;
+  height: 450px;
+  width: 550px;
   background-color: #83bcc7;
   border-radius: 50%;
   border-top-left-radius: 7rem;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.aboutus .leftsidecont figure::after {
-  content: "";
-  position: absolute;
-  left: 25%;
-  top: 40%;
-  width: 400px;
-  height: 250px;
-  background: #4c9cd2;
-  border-radius: 50%;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
-  opacity: 0.3;
-  z-index: -1;
 }
 .aboutus .leftsidecont figure img {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 6rem;
-  margin-left: 8rem;
+  height: 500px;
+  border-radius: 48%;
+  position: absolute;
+  bottom: 0rem;
+}
+.aboutus .leftsidecont figure::before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  width: 350px;
+  height: 350px;
+  background: #002641;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
 }
 .aboutus .rightsidecont .a {
   font-size: 36px;
