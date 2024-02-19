@@ -97,25 +97,7 @@ window.addEventListener('scroll',function(){
   }
 })
 
-//Moveuse move
 
-$('document').ready(function(){
-  var circle = document.createElement('div');
-  
-  $(circle).css({ "background":"#e6e6e6","width":15, "height":15,"borderRadius":"50%","border":"1px solid #84b4d4"});
-  
-  console.log(circle);
- $('.hero').mousemove(function(e){
-  $('.hero').append(circle);
-  console.clear();
-console.log(e.pageX);
-console.log(e.pageY);
-
-$(circle).offset({left:e.pageX, top:e.pageY});
-  });
-  $('.hero').mouseleave(function(e){
-    $(circle).remove();
-  });
 
   //image animation
 
